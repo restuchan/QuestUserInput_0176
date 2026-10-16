@@ -1,5 +1,6 @@
 package com.chan.myapplication
 
+import android.R
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.Composable
@@ -17,5 +18,6 @@ fun FormDataDiri(modifier: Modifier){
     var nama by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
+    val gender:List<string> = ListOf("Laki-laki", "Perempuan")
 
 }
