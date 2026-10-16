@@ -1,5 +1,7 @@
 package com.chan.myapplication
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -14,5 +16,6 @@ fun FormDataDiri(modifier: Modifier){
     //variabel2 untuk menyimpan data yg diperoleh dari komponen UI
     var nama by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
+    var jenis by remember { mutableStateOf("") }
 
 }
