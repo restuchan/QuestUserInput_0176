@@ -1,6 +1,5 @@
 package com.chan.myapplication
 
-import android.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -60,6 +59,17 @@ fun FormDataDiri(modifier: Modifier){
                 }
             }
         }
+        OutlinedTextField(
+            value = textAlamat,
+            singleLine = true,
+            modifier = Modifier.width(250.dp),
+            label = {Text("Alamat")},
+            onValueChange = {
+                textAlamat = it
+            }
+        )
+
+
     }
 
 }
