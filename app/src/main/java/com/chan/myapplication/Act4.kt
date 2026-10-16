@@ -7,4 +7,5 @@ import androidx.compose.ui.Modifier
 @Composable
 fun FormDataDiri(modifier: Modifier){
     var textNama by remember { mutableStateOf("") }
+    var tesAlamat by remember {mutableStateOf("")}
 }
