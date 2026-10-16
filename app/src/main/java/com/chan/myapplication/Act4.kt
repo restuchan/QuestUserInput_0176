@@ -27,6 +27,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.stringResource
 
 @Composable
 fun FormDataDiri(modifier: Modifier){
@@ -94,11 +95,11 @@ fun FormDataDiri(modifier: Modifier){
             enabled = textAlamat.isNotEmpty(),
             onClick = {
                 nama=textNama
-                nama=textJK
-                nama=textAlamat
+                jenis=textJK
+                alamat=textAlamat
             }
         ) {
-            Text(StringResource(R.string.submit))
+            Text(stringResource(R.string.submit))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
